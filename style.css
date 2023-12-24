@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f7faff;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+}
+
+.nav {
+    border: green;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.nav .container-fluid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .logo a {
+    text-decoration: none;
+    color: #464545;
+    font-size: 1.8em;
+    font-weight: 700;
+
+}
+
+.nav .logo a:hover {
+    color: #c0c0c0;
+}
+
+.nav .main_list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav .main_list form {
+    margin-right: auto;
+}
+
+.nav .main_list .form-control {
+    margin-right: 8px;
+}
+
+.nav .main_list .nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .main_list .nav-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 33px;
+    padding: 0px;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-link.dropdown-toggle::after {
+    content: '\25BC';
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    /* Adjust as needed */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.main_list form {
+    display: flex;
+    margin-right: auto;
+}
+
+.form-control {
+    margin-right: 8px;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '\25BC';
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.home-container {
+
+    height: 130vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.home-heading {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.heading-1 {
+
+    color: rgb(33, 38, 65);
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading-2 {
+    color: rgb(62, 64, 77);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-img {
+    padding-top: 50px;
+    width: 700px;
+    height: 100vh;
+}
+
+.department-container {
+
+    position: relative;
+
+}
+
+.text-container-1 {
+
+    position: absolute;
+    color: rgb(86, 83, 83);
+    left: 100px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.text-container-2 {
+
+    position: absolute;
+    color: rgb(81, 160, 240);
+    left: 325px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-container {
+
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.card {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.card-title {
+    color: rgb(69, 68, 68);
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    margin-top: 70px;
+}
+
+
+.bottom-bar {
+    /* background-color: #343a40; */
+    color: #272525;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+
+/* Add this media query for all devices */
+@media screen and (max-width: 768px) {
+    .nav {
+        /* border: 1px solid blue; */
+        display: flex;
+        height: 80px;
+        /* Adjust the height for smaller screens */
+    }
+
+    .nav div.main_list {
+        width: 100%;
+        /* Make the main_list full width on smaller screens */
+        float: none;
+        /* Remove float for better responsiveness */
+    }
+
+    .logo {
+
+        width: 100px;
+        font-size: 1.2em;
+        margin-right: 22vh;
+        padding-left: 13vh;
+    }
+
+    .form-1 {
+        display: flex;
+        width: 320px;
+    }
+
+    .nav-item {
+        padding-top: 10px;
+    }
+
+    .nav div.main_list ul {
+        height: auto;
+        /* Auto height for the ul on smaller screens */
+        flex-direction: column;
+        /* Stack list items vertically */
+    }
+
+    .nav div.main_list ul li {
+        width: 100%;
+        /* Make list items full width on smaller screens */
+    }
+
+    .nav div.main_list ul li a {
+        line-height: 40px;
+        /* Adjust line height for better spacing */
+    }
+
+    .nav .main_list .form-control {
+        margin-right: 8px;
+    }
+
+    .home-container {
+        height: 100vh;
+    }
+
+    .heading-1 {
+        font-size: 40px;
+    }
+
+    .heading-2 {
+        font-size: 20px;
+    }
+
+    .home-img {
+        /* border: 1px solid red; */
+        padding-top: 110px;
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+    }
+
+    .img-fluid {
+        width: auto;
+        max-width: 400px;
+        height: 100px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}

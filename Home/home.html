@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Home with Navbar</title>
+</head>
+
+<body>
+  <nav class="nav navbar-fluid navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="#">CITS</a>
+      </div>
+      <div class="main_list">
+        <form class="form-inline form-1 my-4 my-lg-4">
+          <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Design
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Departments</a>
+                <a class="dropdown-item" href="#">Graphic Design</a>
+                <a class="dropdown-item" href="#">UI/UX Design</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 
+    
+<section class="home"></section> -->
+
+  <!-- Home Component -->
+  <div class="container-fluid mt-6">
+    <div class="home-container">
+      <div class="home-heading">
+        <p class="heading-1 mb-1">CiTS</p>
+        <p class="heading-2">A Online Learning</p>
+      </div>
+      <div class="img-container">
+        <div class="home-img">
+          <img src="/image/well-farma.svg" alt="image-study" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="department-container container-fluid mt-6">
+    <span class="text-container-1 mb-4">Choose Your</span><span class="text-container-2">Department!</span>
+
+    <div class="col card-container">
+      <!-- Departments will be dynamically added here using JavaScript -->
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="bottom-bar">
+      <div class="container">
+        <p>&copy; 2023 CiTS. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/departments/departments.js"></script>
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
